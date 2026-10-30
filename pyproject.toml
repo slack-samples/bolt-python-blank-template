@@ -1,0 +1,22 @@
+[project]
+name = "bolt-python-blank-template"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+    "slack-bolt==1.30.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff==0.16.9",
+]
+
+[tool.setuptools]
+py-modules = ["app"]
+
+[tool.ruff]
+line-length = 125
+exclude = [".venv", "venv"]
+
+[tool.ruff.format]
+quote-style = "double"
